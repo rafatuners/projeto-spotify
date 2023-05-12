@@ -1,6 +1,7 @@
 /* Layout */
 html, body, #home{    
     height: 100%;
+    overflow-x: hidden;    
 }
 
 body {
@@ -46,8 +47,69 @@ nav.navbar-transparente {
 .btn-custom {
     color: white;
     border-radius: 500px;
-    -webkit-bor
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
 }
+
+.btn-roxo{
+    background: #7c25f8;    
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;    
+}
+
+.btn-branco:hover{
+    background: white;
+    color: black;    
+}
+
+/* Estrutura conteúdos
+------------------------------------------------------------*/
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#servicos{
+    background: white;
+    
+}
+
+#servicos h2, h3{
+    color: #7c25f8;
+}
+
+#recursos {
+    color: white;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+#recursos h2{
+    color: white;
+}
+
+.albuns{
+    padding: 10px 0;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
 /* Tipografia -------------
 -------------------------------------------------------------*/
 h1{
@@ -57,15 +119,33 @@ h1{
     color: white;
 }
 
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) {
-
+    .btn-custom{
+        margin: 10px 15px;
+    }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
     h1 {
         font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
     }
 }
 
